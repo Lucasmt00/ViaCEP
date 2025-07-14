@@ -2,15 +2,16 @@
 window.addEventListener('DOMContentLoaded', () => {
     const campos = ['nome', 'cep', 'rua', 'bairro', 'cidade', 'estado'];
     campos.forEach(campo => {
+        const input = document.getElementById(campo);
         const valor = localStorage.getItem(campo);
-        if (valor) {
-            document.getElementById(campo).value = valor;
+        if (input && valor) {
+            input.value = valor;
         }
     });
 });
 
 // Buscar endereço pelo CEP
-document.getElementById("cep").addEventListener("blur", function() {
+document.getElementById("cep").addEventListener("blur", function () {
     const cep = this.value.replace(/\D/g, '');
 
     if (cep.length !== 8) {
@@ -45,7 +46,9 @@ document.querySelectorAll("input").forEach(input => {
 function salvarNoLocalStorage() {
     const campos = ['nome', 'cep', 'rua', 'bairro', 'cidade', 'estado'];
     campos.forEach(campo => {
-        const valor = document.getElementById(campo).value;
-        localStorage.setItem(campo, valor);
+        const input = document.getElementById(campo);
+        if (input) {
+            localStorage.setItem(campo, input.value);
+        }
     });
 }
