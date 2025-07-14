@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Busca de endereço</title>
+</head>
+<body>
+    <h2>Digite seu CEP</h2>
+
+    <form>
+        <label>CEP:
+             <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+        </label>
+
+        <label>Rua:
+            <input type="text" id="rua" disabled />
+        </label><br><br>
+
+        <label>Bairro:
+            <input type="text" id="bairro" disabled />
+        </label><br><br>
+
+        <label>Cidade:
+            <input type="text" id="cidade" disabled />
+        </label><br><br>
+
+        <label>Estado:
+            <input type="text" id="estado" disabled />
+        </label><br><br>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

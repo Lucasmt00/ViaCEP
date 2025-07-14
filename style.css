@@ -1,0 +1,88 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao focar nos campos de entrada */
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Estilo dos campos desabilitados */
+input[disabled] {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Estilo do botão (se houver) */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    transform: translateY(0);
+}
